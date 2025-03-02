@@ -1,3 +1,3 @@
 document.getElementById('btn-desk-back').addEventListener('click',function(){ 
-  window.location.href ="index.html";
+  window.location.href = "index.html";
 })
