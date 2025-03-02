@@ -16,9 +16,10 @@
   </style>
 </head>
 
-<body class=" mx-auto max-w-screen-2xl bg-blue-200 p-5 poppins-fonts">
+<body id="body" class=" mx-auto max-w-screen-2xl bg-white p-5 poppins-fonts">
   <header>
-    <div class="navbar bg-white rounded-xl p-5">
+    <!-- navbar -->
+    <div class="navbar bg-white rounded-xl shadow-md p-5">
       <div class="flex-1">
         <div class="flex gap-3">
           <img src="./assets/logo.png" alt="">
@@ -28,26 +29,23 @@
       <div class="flex gap-12">
         <div class="dropdown dropdown-end">
           <div role="button" class="btn btn-ghost ">
-            <div class="flex gap-5">
+            <div class="flex gap-5 bg-[#F4F7FF]">
               <img src="./assets/checkbox.png" alt="">
               <h1 class="text-3xl">23</h1>
             </div>
           </div>
         </div>
-        <div class="dropdown dropdown-end">
-          <div role="button" class="btn btn-ghost btn-circle avatar">
-            <div class="w-10 rounded-full">
-              <img src="./assets/theme-btn.png" alt="">
-            </div>
+        <div role="button" id="btn-navbar" class="btn btn-circle">
+          <div class="rounded-full bg-[#F4F7FF] p-">
+            <img src="./assets/theme-btn.png" alt="">
           </div>
-          
         </div>
       </div>
     </div>
 
   </header>
 
-  <main class="flex justify-between gap-5">
+  <main class="justify-between gap-5 flex">
     <section class="mt-10 w-[1098px]">
       <div class="flex gap-5">
         <!-- div 1 -->
@@ -61,7 +59,7 @@
             </div>
           </div>
           <!-- div 2 -->
-          <div class="flex gap-8 items-center  bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] p-8 rounded-xl " >
+          <div id="discover" class="cursor-pointer flex p-8 gap-3 items-center  bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-xl " >
             <div>
               <img src="./assets/board.png" alt="">
             </div>
@@ -71,7 +69,7 @@
             </div>
           </div>
           <!-- div 3 -->
-          <div class="flex bg-[#F4F7FF] items-center  w- p-8 rounded-xl" >
+          <div class="flex bg-[#F4F7FF] items-center  p-8 rounded-xl" >
             <div  class="bg-white p-4 rounded-full">
               <img src="./assets/calender.png" alt="">
             </div>
@@ -195,5 +193,8 @@
         }
         todayDate();
   </script>
+
+  <script src="./js/navbar.js"></script>
+  <script src="./js/discover.js"></script>
 </body>
 </html>
